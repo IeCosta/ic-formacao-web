@@ -180,7 +180,47 @@
           </div>
       </div>
 
+      <footer>
+
+        <div class="rodape">
+            Ao visitar ou usar os nossos serviços, está a concordar com o uso de cookies conforme descrito nos nossos
+            <a href="./termos.html">Termos de Serviço, Política de Cookies e Outros</a>
+            <br>
+            <a href="mailto:ismael.costa.formacao@gmail.com" target="#blank"> 
+                ismael.costa.formacao@gmail.com
+            </a>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="https://www.livroreclamacoes.pt/Inicio/" target="#blank">
+                livro de reclamacoes
+            </a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="">&copy; 2023 ALIVIC Web Solutions Development - Todos os direitos reservados</a>
+        </div>
+
+    </footer>
+
+    <div class="botao-topo sticky-bottom">
+        <center>
+            <a href="#">
+                <img src="../img/topo.png" alt="">
+            </a>
+        </center>
+    </div>
+
 
     </body>
-<script src="../js/banner.js"></script>
+
 </html>
+
+<script>
+  const botaoTopo = document.querySelector(".botao-topo");
+
+  window.addEventListener("scroll", function(event){
+    if (window.scrollY >= 100) {
+      botaoTopo.classList.add("botao-topo-mostrar");
+      botaoTopo.classList.remove("botao-topo-esconder");
+    } else {
+      botaoTopo.classList.add("botao-topo-esconder");
+    }
+  });
+</script>
